@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>GS Porfolio Website</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <!-- estilos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel='stylesheet' type='text/css' media='screen' href='./static/css/main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./static/css/media.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./static/css/estiloPrincipal.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./static/css/redes.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <nav>
+                <img src="./static/img/I_logo.png" class="logo" alt="imagen de logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#porfolio">Porfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            
+            <div data-aos="zoom-out-right" class="header-text">
+                <p>FULL-STACK Designer</p>
+                <h1>Hi, I'm <span>Guillermo Salinas</span><br>from Argentina</h1>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- -------- about ------------ -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                
+                <div data-aos="fade-up" class="about-col-1">
+                    <img src="./static/img/I_user.png" alt="">
+                </div>
+
+                <div class="about-col-2">
+                    <h2 data-aos="fade-right" class="sub-title">About Me</h2>
+                    <p>Hello! I am a systems analyst and programmer analyst, for more than 30 years I have been working in the logistics area at Volkswagen Group Argentina. I seek to add value in each project and challenge from the development and implementation. Currently I am developing Full Stack projects in React, UI/UX. .</p>
+
+                    <div data-aos="fade-up"class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                            <li><span>Web Development</span><br>Web/App Development</li>
+                            <li><span>Excel Spreadsheets Development</span><br>Windows/iOS</li>
+                            <li><span>Logo design and web invitation cards</span><br>Windows/iOS</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023 - Current</span><br>FULL-STACK Designer</li>
+                            <li><span>2019 - 2022</span><br>Team lead SAP at Volkswagen Group Argentina</li>
+                            <li><span>1992 - 2019</span><br>Lgistics at Volkswagen Group Argentina.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023</span><br>React - UDEMY</li>
+                            <li><span>2022</span><br>FULL-STACK Designer - ICARO</li>
+                            <li><span>2021</span><br>UI/UX Designer</li>
+                            <li><span>2007</span><br>Software such as Ps, Lr, Il, Ae</li>
+                            <li><span>2006</span><br>Advanced Excel</li>
+                            <li><span>1997</span><br>Systems analyst and programmer analyst - https://www.ubp.edu.ar/</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- -------- services ------------ -->
+    <section id="services">
+        <div class="container">
+            <h2 data-aos="fade-right" class="sub-title">My Services</h2>
+            <div data-aos="fade-up" class="services-list">
+                <div class="cards">
+                    <i class="fa-solid fa-code"></i>
+                    <h3 class="text-h3">Web Design</h3>
+                    <p>From design to implementation of web pages.</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div class="cards">
+                    <i class="fa-solid fa-crop"></i>
+                    <h3 class="text-h3">Full Stack Design</h3>
+                    <p>Both backend and frontend for web systems.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                
+                <div class="cards">
+                    <i class="fa-brands fa-app-store"></i>
+                    <h3 class="text-h3">UI/UX Design</h3>
+                    <p>UI/UX designed in figma for implementation on client platform compatible systems.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- -------- Porfolio ------------ -->
+    <section id="porfolio">
+        <div class="container">
+            <h2 data-aos="fade-right" class="sub-title">My Work</h2>
+            <div class="work-list">
+                <div data-aos="zoom-in" class="work">
+                    <img src="./static/img/work-1.png" alt="imagenes de mis trabajos">
+                    <div class="layer">
+                        <h4>Freelance</h4>
+                        <p>I have worked As a self-employed designer</p>
+                        <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+    
+                <div data-aos="zoom-in" class="work">
+                    <img src="./static/img/work-2.png" alt="imagenes de mis trabajos">
+                    <div class="layer">
+                        <h4>Birthday Invitation</h4>
+                        <p>15th birthday invitation design with photos and confirmation form.</p>
+                        <a href="https://mis15scarme.github.io/invitacion/" target="_blank"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+    
+                <div data-aos="zoom-in" class="work">
+                    <img src="./static/img/work-3.png" alt="imagenes de mis trabajos">
+                    <div class="layer">
+                        <h4>Online Shopping App</h4>
+                        <p>Full Stack ICARO final project</p>
+                        <a href="https://github.com/GuilleSalinas/ecommerce_final" target="_blank"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    
+    <!-- -------- footer ------------ -->
+    <footer id="contact">
+        <div class="container">
+            <div class="row">
+                <!-- para la izquierda del footer -->
+                <div class="coltact-left">
+                    <h2 data-aos="zoom-in" class="sub-title">Contact Me</h2>
+                    <p> <i class="fa-solid fa-paper-plane"></i> celacba@gmail.com </p>
+                    <p> <i class="fa-solid fa-phone"></i> +54 9 - 03513053482 </p>
+
+                    <div class="social-menu">
+                        <ul>
+                            <a href="https://www.facebook.com/guillermo.salinas.524?mibextid=ZbWKwL" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/guiye_salinas/?hl=es" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+                            <a href="https://github.com/GuilleSalinas" target="_blank"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://linkedin.com/in/guillermo-alejandro-salinas-535036241" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        </ul>
+                    </div>
+
+
+                    <a href="/static/img/my-cv.pdf" download class="btn btn3">Download CV</a>
+                </div>
+                
+                <!-- para la derecha del footer -->
+                <div class="coltact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Enviar</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyrigt <i class="fa-regular fa-copyright"></i> Guille Salinas - 2023 con <i class="fa-solid fa-heart"></i></p>
+        </div>
+
+    </footer>
+
+
+
+    <script src='./static/js/main.js'></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200,
+            once: true
+        });
+    </script>
+     
+</body>
+</html>
