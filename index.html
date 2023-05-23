@@ -177,11 +177,11 @@
                 
                 <!-- para la derecha del footer -->
                 <div class="coltact-right">
-                    <form>
-                        <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="email" placeholder="Your Email" required>
-                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                        <button type="submit" class="btn btn2">Enviar</button>
+                    <form name="form-contact" id="formReset" />
+                        <input type="text" name="name" id="name" placeholder="Your Name" required>
+                        <input type="email" name="email" id="email" placeholder="Your Email" required>
+                        <textarea name="message" rows="6" id="message" placeholder="Your Message"></textarea>
+                        <button id="sendEmail" type="submit" class="btn btn2">Send</button>
                     </form>
 
                 </div>
@@ -196,6 +196,7 @@
 
 
     <script src='./static/js/main.js'></script>
+    <script src='./static/js/correo.js'></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({
