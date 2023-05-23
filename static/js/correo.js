@@ -1,3 +1,4 @@
+// Esto es para enviar el correo a la direccion desde el formulario
 const btnEnvio = document.getElementById('sendEmail');
  
 btnEnvio.addEventListener('click', function (e) {
