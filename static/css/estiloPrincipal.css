@@ -1,4 +1,4 @@
-@import url("http://font-family: 'League Spartan', sans-serif;");
+  @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
 :root{
     --color-bg-body: #e72a2a;
@@ -6,9 +6,6 @@
     --color-bg-titulos-suave: #b11f4e;
     --color-bg-blanco: #fff;
     --color-bg-form: #232a37;
-
-
-
 
     
     --color-secundario: #1a1a1a;
@@ -33,7 +30,6 @@
     --radial-bg-0:#e9ecf6;
     --radial-bg-1:#d6ddf8;
     --radial-bg-2:#e2e7f9;
-
 
 }
 
