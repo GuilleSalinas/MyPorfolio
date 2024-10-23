@@ -348,3 +348,8 @@ form .btn2 {
   padding: 0 5px;
   color: crimson;
 }
+
+.copyright a {
+  padding: 0 5px;
+  color: #ff004f;
+}
